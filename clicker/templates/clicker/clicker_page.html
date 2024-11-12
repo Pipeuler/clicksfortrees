@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clicker para plantar árboles</title>
+</head>
+<body>
+    <h1>Click para plantar un árbol</h1>
+    <!-- Usamos un enlace en lugar de onclick para evitar los errores de sintaxis -->
+    <a href="{% url 'clicker:clicker_page' %}">
+        <button>Plant Tree</button>
+    </a>
+    <p>Total de árboles plantados: {{ total_trees }}</p>
+</body>
+</html>
